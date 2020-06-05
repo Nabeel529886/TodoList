@@ -1,0 +1,65 @@
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+#main-div{
+  text-align: center;
+}
+
+#main-div h1{
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#main-div .count-div{
+  font-size: 25px;
+  font-weight: 500;
+  color: #777;
+}
+
+#main-div .addtodo-btn{
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  box-shadow: 2px 2px 3px #777;
+  border-radius: 10px;
+}
+
+
+#main-div .todo-list{
+  list-style: none;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#main-div .todo-list-items{
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 2px 2px 3px #777;
+  margin-top: 20px;
+}
+
+#main-div .todo-list-items .item-checkbox{
+  float: left;
+  width: 30px;
+  height: 30px;
+  line-height: 15px;
+}
+
+#main-div .todo-list-items .item-deleteBtn{
+  float: right;
+  padding: 10px;
+  line-height: 15px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+#main-div .todo-list-items .item-text{
+  font-size: 25px;
+  margin-left: 20px;
+
+}

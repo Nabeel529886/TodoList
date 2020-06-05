@@ -4,10 +4,10 @@ import "./App.css"
 let id = 0
 
 const Todo = props => (
-  <li>
-    <input type="checkbox" checked={props.todo.checked} onChange={props.onToggle} />
-    <button onClick={props.onDelete}>Delete</button>
-    <span>{props.todo.text}</span>
+  <li className="todo-list-items">
+    <input className="item-checkbox" type="checkbox" checked={props.todo.checked} onChange={props.onToggle} />    
+    <span className="item-text">{props.todo.text}</span>
+    <button className="item-deleteBtn" onClick={props.onDelete}>Delete</button>
   </li>
 )
 
@@ -43,12 +43,13 @@ export default class App extends React.Component{
     return (
       <div id="main-div">
         <h1>BootCamp Todo List</h1>
-        <div>
+        <div className="count-div">
           <p>Total Todos: {this.state.todos.length}</p>
           <p>Unchecked Todos: {this.state.todos.filter(todo => !todo.checked).length}</p>
         </div>
-        <button onClick={() => this.addTodo()}>Add A new Todo</button>
-        <ul>
+        <button className="addtodo-btn" onClick={() => this.addTodo()}>Add A new Todo</button>
+        <div className="todo-list-box">
+        <ul className="todo-list">
           {this.state.todos.map(todo => (
             <Todo 
             onToggle={() => this.toggleTodo(todo.id)} 
@@ -56,6 +57,7 @@ export default class App extends React.Component{
             todo={todo}  />
           ))}
         </ul>
+        </div>
       </div>
     )
   }
