@@ -18,9 +18,14 @@ export default class App extends React.Component{
 
   addTodo(){
     const text = prompt("Enter Your Todo")
-    this.setState({
-      todos: [...this.state.todos, {id: id++, text: text, checked: false}]
-    })
+    if(text.length === 0){
+      alert("Empty Todo's Can't Be Added")
+    }
+    else{
+      this.setState({
+        todos: [...this.state.todos, {id: id++, text: text, checked: false}]
+      })
+    }
   }
 
   removeTodo(id){
