@@ -41,25 +41,41 @@ body, html{
 }
 
 #main-div .todo-list-items .item-checkbox{
-  float: left;
   width: 30px;
   height: 30px;
-  line-height: 15px;
+  float: left;
+  line-height: 30px;
+
 }
 
 #main-div .todo-list-items .item-deleteBtn{
   float: right;
   padding: 10px;
-  line-height: 15px;
   font-size: 20px;
   background-color: red;
   color: white;
   border: none;
   border-radius: 10px;
+  margin-left: 10px;
+  line-height: 20px;
+}
+
+#main-div .todo-list-items .item-editBtn{
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(151, 77, 77);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  line-height: 20px;
 }
 
 #main-div .todo-list-items .item-text{
   font-size: 25px;
-  margin-left: 20px;
+}
 
+#main-div .todo-list-items .item-datetime{
+  font-size: 15px;
+  color: #777;
 }
